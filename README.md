@@ -13,7 +13,7 @@ Chen, Dapeng, et al. "Group consistent similarity learning via deep crf for pers
 - [python 3.6](We recommend to use Anaconda, since many python libs like numpy and sklearn are needed in our code.)
 We use the MTCNN to first detect and align the faces. We used two customized layers which may not be included in the official caffe.
 - [PyTorch and torchvision](https://pytorch.org/) (we run the code under version 0.4.0, maybe versions >=1.0 also work.)  
--[metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)
+- [metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)
 
 ## Dataset Downloads
 Please Download the [Mars](http://www.liangzheng.com.cn/Project/project_mars.html) Dataset firstly.
