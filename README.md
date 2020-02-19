@@ -33,7 +33,7 @@ We also provide the pretrained models in [Google Drive](https://zhangleuestc.git
 
 ## Notes
 
-1. Although the KemenyYoung method used in the paper is theotically tidy, it is somehow time consuing. Motivated by the [TSN](https://github.com/yjxiong/temporal-segment-networks) framework, we pool the visual features for a pool of sparsely sampled frames and then re-identify based on the Euclidean distance amongest all the gallery videos. This version performs on par with the KemenyYoung methods but is much faster. However, if you are still interested in the implementation of the KemenyYoung method, please feel free to contact me.
+1. Although the KemenyYoung method used in the paper is theotically tidy, it is somehow time consuing. Motivated by the [TSN](https://github.com/yjxiong/temporal-segment-networks) framework, we pool the visual features from a set of sparsely sampled frames and then re-identify based on the Euclidean distance amongest all the gallery videos. This version performs on par with the KemenyYoung methods but is much faster. However, if you are still interested in the implementation of the KemenyYoung method, please feel free to contact me.
 
 2. As Mars is the largest video re-id datasets, we sparsely sample several frames from all tracklet during training to speed up the training process. 
 
@@ -63,7 +63,7 @@ Please cite the following papers if you use this repository in your research wor
 
 ```
 
-Contact **Le Zhang** [:envelope:](mailto:zhangleuestc@gmail.com) for questions, comments and reporting bugs.
+Contact **Le Zhang**(zhangleuestc@gmail.com) for questions, comments and reporting bugs.
 
 
 
