@@ -9,6 +9,7 @@ This repository contains the Pytorch implementation of the Ensemble_CRF methods 
 IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020.
 
 Our experiment is mainly based on the following paper: 
+
 Chen, Dapeng, et al. "Group consistent similarity learning via deep crf for person re-identification." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.
 
 ## Requirements
