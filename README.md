@@ -3,7 +3,9 @@
 This repository contains the Pytorch implementation of the Ensemble_CRF methods in the following paper:
 
 [Ordered or Orderless: A Revisit for Video based Person Re-Identification](https://arxiv.org/abs/1912.11236)  
+
 [*Le Zhang*](https://zhangleuestc.github.io/), Joey Tianyi Zhou, Ming-Ming Cheng, Yun Liu, Jia-Wang Bian, Zeng Zeng, Chunhua Shen
+
 IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020.
 
 Our experiment is mainly based on the following paper: 
@@ -11,7 +13,6 @@ Chen, Dapeng, et al. "Group consistent similarity learning via deep crf for pers
 
 ## Requirements
 - [python 3.6](We recommend to use Anaconda, since many python libs like numpy and sklearn are needed in our code.)
-We use the MTCNN to first detect and align the faces. We used two customized layers which may not be included in the official caffe.
 - [PyTorch and torchvision](https://pytorch.org/) (we run the code under version 0.4.0, maybe versions >=1.0 also work.)  
 - [metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)
 
@@ -29,7 +30,7 @@ CUDA_VISIBLE_DEVICES=2,3,4 python test_mars.py
 
 We also provide the pretrained models in [Google Drive](https://zhangleuestc.github.io/)
 
-##Notes
+## Notes
 
 1. Although the KemenyYoung method used in the paper is theotically tidy, it is somehow time consuing. Motivated by the [TSN](https://github.com/yjxiong/temporal-segment-networks) framework, we pool the visual features for a pool of sparsely sampled frames and then re-identify based on the Euclidean distance amongest all the gallery videos. This version performs on par with the KemenyYoung methods but is much faster. However, if you are still interested in the implementation of the KemenyYoung method, please feel free to contact me.
 
