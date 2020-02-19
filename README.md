@@ -1,44 +1,45 @@
 # Ordered or Orderless: A Revisit for Video based Person Re-Identification
 
-This repository contains the training prototxt for our papers: 
+This repository contains the Pytorch implementation of the Ensemble_CRF methods in the following paper:
 
 [Ordered or Orderless: A Revisit for Video based Person Re-Identification](https://arxiv.org/abs/1912.11236)  
 [*Le Zhang*](https://zhangleuestc.github.io/), Joey Tianyi Zhou, Ming-Ming Cheng, Yun Liu, Jia-Wang Bian, Zeng Zeng, Chunhua Shen
 IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020.
 
-
-
-![image](https://github.com/ZhangLeUestc/PersEmoN/blob/master/img/system.jpg)
+Our experiment is mainly based on the following paper: 
+Chen, Dapeng, et al. "Group consistent similarity learning via deep crf for person re-identification." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.
 
 ## Requirements
-- [MTCNN](https://github.com/kpzhang93/MTCNN_face_detection_alignment)  
+- [python 3.6](We recommend to use Anaconda, since many python libs like numpy and sklearn are needed in our code.)
 We use the MTCNN to first detect and align the faces. We used two customized layers which may not be included in the official caffe.
-- [TSN](https://github.com/yjxiong/temporal-segment-networks)  
-Used in Videodata layer.
+- [PyTorch and torchvision](https://pytorch.org/) (we run the code under version 0.4.0, maybe versions >=1.0 also work.)  
+-[metric-learn 0.3.0](https://pypi.org/project/metric-learn/0.3.0/)
 
-Also, For the "DomainConfusionInnerProduct" layer, we get the code from the following paper: ["Simultaneous Deep Transfer Across Domains and Tasks."](https://people.eecs.berkeley.edu/~jhoffman/papers/Tzeng_ICCV2015.pdf), ICCV, 2015. 
-
-As the original code for the above paper is not well-maintained, we provide the source code of "DomainConfusionInnerProduct" layer in this repository.
+## Dataset Downloads
+Please Download the [Mars](http://www.liangzheng.com.cn/Project/project_mars.html) Dataset firstly.
 
 ## Citations
 Please cite the following papers if you use this repository in your research work:
 ```sh
-@article{zhang2019persemon,
-  title={PersEmoN: A Deep Network for Joint Analysis of Apparent Personality, Emotion and Their Relationship},
-  author={Zhang, Le and Peng, Songyou and Winkler, Stefan},
-  journal={IEEE Transactions on Affective Computing},
-  year={2019},
-  publisher={IEEE}
+
+@article{Zhang2020OrderlessReID,
+    author  = {Le Zhang and
+               Zenglin Shi and
+               Joey Tianyi Zhou and
+               Ming-Ming Cheng and
+               Yun Liu and
+               Jia-Wang Bian and Zeng Zeng and Chunhua Shen},
+    title   = {Ordered or Orderless: A Revisit for Video based Person Re-Identification},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year    = {2020},
+    eprint  = {1912.11236},
+    url     = {},
+    venue   = {TPAMI},
 }
+ 
+
 ```
-and
-```sh
-@inproceedings{peng2018mm,
- title = {Give Me One Portrait Image, I Will Tell You Your Emotion and Personality},
- author =  {Peng, Songyou and Zhang, Le and Winkler, Stefan},
- booktitle = {ACM International Conference on Multimedia (ACM MM)},
- year = {2018},
-}
+
 ```
 
 Contact **Le Zhang** [:envelope:](mailto:zhangleuestc@gmail.com) for questions, comments and reporting bugs.
