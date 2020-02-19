@@ -8,7 +8,7 @@ This repository contains the Pytorch implementation of the Ensemble_CRF methods 
 
 IEEE Transactions on Pattern Analysis and Machine Intelligence, 2020.
 
-![image](https://github.com/ZhangLeUestc/VideoReid-TPAMI2020/blob/master/image.jpg)
+![image] <div align=center><img src="https://github.com/ZhangLeUestc/VideoReid-TPAMI2020/blob/master/image.jpg"  /></div>
 
 Our experiment is mainly based on the following paper: 
 
