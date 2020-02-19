@@ -18,6 +18,25 @@ We use the MTCNN to first detect and align the faces. We used two customized lay
 ## Dataset Downloads
 Please Download the [Mars](http://www.liangzheng.com.cn/Project/project_mars.html) Dataset firstly.
 
+## Training Example
+CUDA_VISIBLE_DEVICES=2,3,4 python main_mars.py -b 132 -d mars --epoch 100  --instances_num 6 --cnnlr 0.5e-2  --logs-dir logs/mars/
+
+## Testing Example
+
+CUDA_VISIBLE_DEVICES=2,3,4 python test_mars.py 
+
+## Pretrained models:
+
+We also provide the pretrained models in [Google Drive](https://zhangleuestc.github.io/)
+
+##Notes
+
+1. Although the KemenyYoung method used in the paper is theotically tidy, it is somehow time consuing. Motivated by the [TSN](https://github.com/yjxiong/temporal-segment-networks) framework, we pool the visual features for a pool of sparsely sampled frames and then re-identify based on the Euclidean distance amongest all the gallery videos. This version performs on par with the KemenyYoung methods but is much faster. However, if you are still interested in the implementation of the KemenyYoung method, please feel free to contact me.
+
+2. As Mars is the largest video re-id datasets, we sparsely sample several frames from all tracklet during training to speed up the training process. 
+
+3. One may modify the sampling strategy used in the training and testing part to improve our results.
+
 ## Citations
 Please cite the following papers if you use this repository in your research work:
 ```sh
