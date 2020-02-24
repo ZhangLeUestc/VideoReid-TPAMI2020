@@ -39,7 +39,7 @@ We also provide the pretrained models in [Google Drive](https://zhangleuestc.git
 
 2. As Mars is the largest video re-id datasets, we sparsely sample several frames from all tracklet during training to speed up the training process. 
 
-3. One may modify the sampling strategy used in the training and testing part to improve our results. 
+3.You may modify the sampling strategy used in the training and testing part to improve our results. 
 
 ## Citations
 Please cite the following papers if you use this repository in your research work:
