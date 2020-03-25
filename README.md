@@ -31,7 +31,7 @@ CUDA_VISIBLE_DEVICES=2,3,4 python test_mars.py
 
 ## Pretrained models:
 
-We also provide the pretrained models in [Google Drive](https://zhangleuestc.github.io/)
+We also provide the pretrained models in [Google Drive](https://drive.google.com/drive/folders/1nFhmpsd83QCsze5J2nwg31ffiiGB0voU?usp=sharing)
 
 ## Notes
 
